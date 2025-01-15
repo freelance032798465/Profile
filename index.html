@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: whitesmoke;
+        }
+
+        .blog-container {
+            margin: 20px auto;
+            width: 90vh;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 5px rgba(94, 94, 94, 0.404);
+        }
+
+        .blog-container img {
+            width: 100%;
+        }
+
+        .blog-container p {
+            color: gray;
+        }
+
+        .blog-container p:nth-of-type(2) {
+            padding-top: 20px;
+        }
+
+        .blog-container p:nth-of-type(3) {
+            padding-bottom: 20px;
+        }
+
+        .comment-form input {
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 1rem;
+            color: blue;
+        }
+
+        .comment-form textarea {
+            margin: 10px 0;
+            border-radius: 5px;
+            width: 100%;
+            height: 100px;
+            padding: 5px;
+            font-size: 1rem;
+            resize: none;
+            color: blue;
+        }
+
+        .comment-form button {
+            width: 100%;
+            background-color: rgb(101, 170, 87);
+            padding: 10px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .comment-form button:hover {
+            background-color: rgb(74, 129, 63);
+        }
+
+        .blog-container p:nth-of-type(4) {
+            display: none;
+            color: rgb(20, 197, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blog-container">
+        <h1>How to Learn Web Development</h1>
+        <p><strong>Published on:</strong> January 1, 2025</p>
+        <img src="https://as2.ftcdn.net/jpg/11/85/42/33/220_F_1185423303_CSgBzRLB2inExKnPIO2dk7FtiA4jtJUE.jpg" alt="Blog Image">
+        <p>Web development is a continuously evolving field with many aspects to explore. It encompasses everything from
+            building websites to creating complex web applications. Whether you're interested in front-end or back-end
+            development, there's a wide range of technologies and tools to help you succeed. In this article, we'll
+            discuss some essential tips to help you get started in web development.</p>
+        <p>First, it's important to have a solid understanding of HTML, CSS, and JavaScript. These are the foundational
+            building blocks of web development. Next, you can dive deeper into frameworks and libraries that make
+            development faster and easier. For example, React is widely used for building user interfaces, while Node.js
+            is great for back-end development.</p>
+        <h2>Leave a Comment:</h2>
+        <form class="comment-form">
+            <input type="text" id="yourname" name="yourname" placeholder="Your Name" required><br>
+            <textarea name="yourcomment" placeholder="Your Comment" required></textarea><br>
+            <button type="submit">Submit Comment</button>
+        </form>
+        <p>Your comment has been submitted!</p>
+    </div>
+
+    <script>
+        const formComment = document.querySelector('.comment-form');
+        formComment.addEventListener('submit', (event) => {
+            event.preventDefault();
+            document.querySelector('.blog-container p:nth-of-type(4)').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
