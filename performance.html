@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Anocha</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: rgb(173, 229, 178);
+            font-size: large;
+        }
+
+        header {
+            display: flex;
+            background-color: rgb(79, 148, 83);
+            justify-content: space-between;
+            padding: 0 30px;
+            color: #fff;
+            align-items: center;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: rgb(0, 48, 207);
+        }
+
+        footer p {
+            margin: 0;
+            padding: 10px;
+            background-color: rgb(79, 148, 83);
+            text-align: center;
+            color: #fff;
+        }
+
+        .performance-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            box-shadow: 0 10px 40px rgba(70, 134, 110, 0.76);
+            background-color: rgb(230, 253, 230);
+            padding: 30px;
+            color: rgb(0, 48, 207);
+        }
+
+        .performance-container h1 {
+            padding-left: 30px;
+        }
+
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            margin-top: 50px;
+        }
+
+        .performance {
+            box-shadow: 0 5px 20px rgb(9, 255, 0);
+            border-radius: 10px;
+            overflow: hidden;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.5s ease;
+        }
+
+        .performance:hover {
+            transform: translateY(-15px);
+        }
+
+        .performance:hover a {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(30%);
+        }
+
+        .performance img {
+            width: 100%;
+        }
+
+        .performance h2 {
+            padding-left: 20px;
+        }
+
+        .performance p {
+            padding: 0 10px;
+        }
+
+        .performance a {
+            display: block;
+            color: rgb(0, 48, 207);
+            text-align: center;
+            text-decoration: none;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Anocha Lhaoken</h2>
+        <ul>
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="performance.html">ผลงาน</a></li>
+        </ul>
+    </header>
+    <section class="performance-container">
+        <h1>ผลงาน</h1>
+        <div class="performance-grid">
+            <div class="performance">
+                <img src="p_180iq/image.jpg" alt="Picture Performance">
+                <h2>เกม 180IQ</h2>
+                <p>เป็นโปรแกรมช่วยคิดคำตอบของเกม 180IQ เพียงแค่กรอกข้อมูลโจทย์และผลลัพธ์ลงไป
+                    จากนั้นโปรแกรมจะแสดงวิธีการคำนวนผลลัพธ์ออกมา</p>
+                <a href="p_180iq/show.html">รายละเอียด</a>
+            </div>
+            <div class="performance">
+                <img src="p_mainTester/image.jpg" alt="Picture Performance">
+                <h2>โปรแกรมเครื่อง Tester อัตโนมัติ</h2>
+                <p>ควบคุมการทำงานเครื่อง Tester ที่ออกแบบเอง สามารถเขียนคำสั่งผ่าน excel เลือกได้ว่าจะใช้งานกี่ box
+                    มีฟังก์ชั่นต่างๆมากมาย</p>
+                <a href="p_mainTester/show.html">รายละเอียด</a>
+            </div>
+            <div class="performance">
+                <img src="p_cameraBooth/image.jpg" alt="Picture Performance">
+                <h2>กล้อง webcam สำหรับ booth</h2>
+                <p>สามารถเปิดกล้องจาก webcam ขึ้นมาถ่ายภาพ และตัดต่อฉากหลัง
+                    รวมไปถึงจัดเรียงภาพทั้งหมดให้เข้ารูปแบบแล้วอัพขึ้นคลาวด์ สร้าง QR Code สำหรับดาวน์โหลดภาพ</p>
+                <a href="p_cameraBooth/show.html">รายละเอียด</a>
+            </div>
+            <div class="performance">
+                <img src="p_excelToWord/image.jpg" alt="Picture Performance">
+                <h2>Excel to Word</h2>
+                <p>นำข้อมูลจากใน excel ไปแทรกใส่ใน word ที่จัดรูปแบบไว้แล้ว</p>
+                <a href="p_excelToWord/show.html">รายละเอียด</a>
+            </div>
+            <div class="performance">
+                <img src="p_car/image.jpg" alt="Picture Performance">
+                <h2>ควบคุมรถโฟล์คลิฟท์อัตโนมัติ</h2>
+                <p>รับคำสั่งจาก csv เพื่อใช้ในการควบคุมรถ สั่งงานรถผ่าน serial port รับค่าพิกัดผ่าน tcpip
+                    ควบคุมการเคลื่อนที่ ยกสิ่งของ มีระบบป้องกันการชนด้วย sensor และใช้กล้องที่ระบุระยะห่างได้</p>
+                <a href="p_car/show.html">รายละเอียด</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

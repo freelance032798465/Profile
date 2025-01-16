@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post</title>
+    <title>Mr.Anocha</title>
     <style>
         * {
             box-sizing: border-box;
@@ -13,103 +13,131 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            background-color: whitesmoke;
+            background-color: rgb(173, 229, 178);
+            font-size: large;
         }
 
-        .blog-container {
-            margin: 20px auto;
-            width: 90vh;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 5px 5px rgba(94, 94, 94, 0.404);
-        }
-
-        .blog-container img {
-            width: 100%;
-        }
-
-        .blog-container p {
-            color: gray;
-        }
-
-        .blog-container p:nth-of-type(2) {
-            padding-top: 20px;
-        }
-
-        .blog-container p:nth-of-type(3) {
-            padding-bottom: 20px;
-        }
-
-        .comment-form input {
-            width: 100%;
-            border-radius: 5px;
-            padding: 5px;
-            font-size: 1rem;
-            color: blue;
-        }
-
-        .comment-form textarea {
-            margin: 10px 0;
-            border-radius: 5px;
-            width: 100%;
-            height: 100px;
-            padding: 5px;
-            font-size: 1rem;
-            resize: none;
-            color: blue;
-        }
-
-        .comment-form button {
-            width: 100%;
-            background-color: rgb(101, 170, 87);
-            padding: 10px;
+        header {
+            display: flex;
+            background-color: rgb(79, 148, 83);
+            justify-content: space-between;
+            padding: 0 30px;
             color: #fff;
-            cursor: pointer;
-            border-radius: 5px;
-            border: none;
-            font-size: 1rem;
+            align-items: center;
         }
 
-        .comment-form button:hover {
-            background-color: rgb(74, 129, 63);
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
         }
 
-        .blog-container p:nth-of-type(4) {
-            display: none;
-            color: rgb(20, 197, 20);
+        header a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: rgb(0, 48, 207);
+        }
+
+        .profile-container {
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 10px 40px rgba(70, 134, 110, 0.76);
+            background-color: rgb(230, 253, 230);
+            padding: 30px;
+            color: rgb(0, 48, 207);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-container h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .profile-container img {
+            margin: 0 auto;
+            display: block;
+            height: 400px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgb(47, 255, 238);
+            margin-bottom: 100px;
+        }
+
+        .profile-container h2 {
+            padding-left: 30px;
+        }
+
+        .profile-container h2:nth-of-type(2) {
+            margin-top: 50px;
+        }
+
+        .profile-container .btPerformance {
+            display: inline-block;
+            text-decoration: none;
+            margin: 50px 0 100px auto;
+            padding: 20px 30px;
+            font-size: larger;
+            border-radius: 10px;
+            background-color: rgb(131, 241, 141);
+            color: rgb(0, 48, 207);
+        }
+
+        .profile-container .btPerformance:hover {
+            background-color: rgb(173, 229, 178);
+        }
+
+        footer p {
+            margin: 0;
+            padding: 10px;
+            background-color: rgb(79, 148, 83);
+            text-align: center;
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
-    <div class="blog-container">
-        <h1>How to Learn Web Development</h1>
-        <p><strong>Published on:</strong> January 1, 2025</p>
-        <img src="https://as2.ftcdn.net/jpg/11/85/42/33/220_F_1185423303_CSgBzRLB2inExKnPIO2dk7FtiA4jtJUE.jpg" alt="Blog Image">
-        <p>Web development is a continuously evolving field with many aspects to explore. It encompasses everything from
-            building websites to creating complex web applications. Whether you're interested in front-end or back-end
-            development, there's a wide range of technologies and tools to help you succeed. In this article, we'll
-            discuss some essential tips to help you get started in web development.</p>
-        <p>First, it's important to have a solid understanding of HTML, CSS, and JavaScript. These are the foundational
-            building blocks of web development. Next, you can dive deeper into frameworks and libraries that make
-            development faster and easier. For example, React is widely used for building user interfaces, while Node.js
-            is great for back-end development.</p>
-        <h2>Leave a Comment:</h2>
-        <form class="comment-form">
-            <input type="text" id="yourname" name="yourname" placeholder="Your Name" required><br>
-            <textarea name="yourcomment" placeholder="Your Comment" required></textarea><br>
-            <button type="submit">Submit Comment</button>
-        </form>
-        <p>Your comment has been submitted!</p>
-    </div>
-
-    <script>
-        const formComment = document.querySelector('.comment-form');
-        formComment.addEventListener('submit', (event) => {
-            event.preventDefault();
-            document.querySelector('.blog-container p:nth-of-type(4)').style.display = 'block';
-        });
-    </script>
+    <header>
+        <h2>Anocha Lhaoken</h2>
+        <ul>
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="performance.html">ผลงาน</a></li>
+        </ul>
+    </header>
+    <section class="profile-container">
+        <h1>นาย อโนชา เหล่าเคน</h1>
+        <img src="profile/Profile.jpg" alt="Profile Picture">
+        <h2>ประวัติการศึกษา</h2>
+        <div class="studys">
+            <div class="study">
+                <p><strong>ปริญญาตรี - ปีที่สำเร็จการศึกษา 2561</strong></p>
+                <p><strong>สถานศึกษา:</strong> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                    วิทยาเขตชุมพรเขตรอุดมศักดิ์</p>
+                <p><strong>คณะ:</strong> วิศวกรรมศาสตร์</p>
+                <p><strong>สาขา:</strong> วิศวกรรมอิเล็กทรอนิกส์</p>
+                <p><strong>เกรดเฉลี่ย:</strong> 3.18</p>
+            </div>
+        </div>
+        <h2>ประวัติการทำงาน</h2>
+        <div class="workHistorys">
+            <div class="workHistory">
+                <p><strong>มีนาคม 2562 - มิถุนายน 2567</strong></p>
+                <p><strong>บริษัท ทีมพรีซิชั่น จำกัด (มหาชน)</strong></p>
+                <p><strong>ตำแหน่งงาน:</strong> Desing & Test Development</p>
+                <p><strong>รายละเอียดงาน:</strong> ออกแบบเครื่อง Tester, ออกแบบวงจร, เขียนโปรแกรมควมคุมเครื่อง Tester,
+                    เขียนโปรแกรมอื่นๆตามที่ได้รับมอบหมาย, ปรับปรุงและพัฒนา Hardware & Software, Support Production Line
+                </p>
+            </div>
+        </div>
+        <a class="btPerformance" href="performance.html">ผลงาน</a>
+    </section>
+    <footer>
+        <p>&copy; All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
