@@ -24,6 +24,9 @@
             padding: 0 30px;
             color: #fff;
             align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100vw;
         }
 
         header ul {
@@ -58,18 +61,36 @@
             align-items: center;
             box-shadow: 0 10px 40px rgba(70, 134, 110, 0.76);
             background-color: rgb(230, 253, 230);
-            gap: 70px;
             padding: 100px 0;
+            color: rgb(0, 48, 207);
         }
 
         .show img {
             box-shadow: 0 5px 20px rgb(255, 252, 87);
             width: 90%;
+            border-radius: 10px;
+            margin-top: 70px;
+        }
+
+        .show p {
+            padding: 0 20px;
+        }
+
+        .show a {
+            color: rgb(15, 180, 0);
+            transition: color 0.5s ease, font-size 0.5s ease;
+        }
+
+        .show a:hover {
+            color: rgb(0, 48, 207);
+            font-size: 20px;
         }
 
         .show video {
             box-shadow: 0 5px 20px rgb(255, 186, 57);
             width: 90%;
+            margin-top: 70px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -83,14 +104,26 @@
         </ul>
     </header>
     <section class="show">
+        <ol><strong>เนื้องานในส่วนที่ทำ</strong>
+            <li>ปรับปรุงโค้ด python ให้สามารถรับส่งคำสั่งผ่าน tcpip ได้</li>
+            <li>สร้าง GUI ให้ง่ายต่อการใช้งาน</li>
+            <li>สามารถเลือก background ได้</li>
+            <li>จัดเก็บไฟล์ต่างๆ ให้เป็นระเบียบ</li>
+        </ol>
         <img src="001.png">
+        <p>เมื่อเปิดโปรแกรม จะเปิดกล้อง webcam โดยอัตโนมัติ</p>
         <img src="002.png">
+        <p>เลือก background และ effect ได้</p>
         <img src="003.png">
+        <p>ถ่ายรูปให้ครบ 3 ภาพ</p>
         <img src="004.png">
+        <p>สามารถเปลี่ยนภาพพื้นหลังได้ ถ้าต้องการ</p>
         <img src="005.png">
         <img src="006.png">
+        <p>แสดงภาพตัวอย่างก่อน print</p>
         <img src="007.png">
-        <video controls>
+        <p>แสดง qr code ที่สามารถสแกนเข้าไปโหลดภาพได้</p>
+        <video controls preload="auto">
             <source src="101.mp4" type="video/mp4">
         </video>
     </section>

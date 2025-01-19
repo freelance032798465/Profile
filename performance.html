@@ -24,6 +24,10 @@
             padding: 0 30px;
             color: #fff;
             align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            z-index: 1000;
         }
 
         header ul {
@@ -56,6 +60,7 @@
             box-shadow: 0 10px 40px rgba(70, 134, 110, 0.76);
             background-color: rgb(230, 253, 230);
             padding: 30px;
+            padding-top: 100px;
             color: rgb(0, 48, 207);
         }
 
@@ -126,18 +131,25 @@
         <h1>ผลงาน</h1>
         <div class="performance-grid">
             <div class="performance">
-                <img src="p_180iq/image.jpg" alt="Picture Performance">
-                <h2>เกม 180IQ</h2>
-                <p>เป็นโปรแกรมช่วยคิดคำตอบของเกม 180IQ เพียงแค่กรอกข้อมูลโจทย์และผลลัพธ์ลงไป
-                    จากนั้นโปรแกรมจะแสดงวิธีการคำนวนผลลัพธ์ออกมา</p>
-                <a href="p_180iq/show.html">รายละเอียด</a>
-            </div>
-            <div class="performance">
                 <img src="p_mainTester/image.jpg" alt="Picture Performance">
                 <h2>โปรแกรมเครื่อง Tester อัตโนมัติ</h2>
                 <p>ควบคุมการทำงานเครื่อง Tester ที่ออกแบบเอง สามารถเขียนคำสั่งผ่าน excel เลือกได้ว่าจะใช้งานกี่ box
                     มีฟังก์ชั่นต่างๆมากมาย</p>
                 <a href="p_mainTester/show.html">รายละเอียด</a>
+            </div>
+            <div class="performance">
+                <img src="p_car/image.jpg" alt="Picture Performance">
+                <h2>ควบคุมรถโฟล์คลิฟท์อัตโนมัติ</h2>
+                <p>รับคำสั่งจาก csv เพื่อใช้ในการควบคุมรถ สั่งงานรถผ่าน serial port รับค่าพิกัดผ่าน tcpip
+                    ควบคุมการเคลื่อนที่ ยกสิ่งของ มีระบบป้องกันการชนด้วย sensor และใช้กล้องที่ระบุระยะห่างได้</p>
+                <a href="p_car/show.html">รายละเอียด</a>
+            </div>
+            <div class="performance">
+                <img src="p_180iq/image.jpg" alt="Picture Performance">
+                <h2>เกม 180IQ</h2>
+                <p>เป็นโปรแกรมช่วยคิดคำตอบของเกม 180IQ เพียงแค่กรอกข้อมูลโจทย์และผลลัพธ์ลงไป
+                    จากนั้นโปรแกรมจะแสดงวิธีการคำนวนผลลัพธ์ออกมา</p>
+                <a href="p_180iq/show.html">รายละเอียด</a>
             </div>
             <div class="performance">
                 <img src="p_cameraBooth/image.jpg" alt="Picture Performance">
@@ -151,13 +163,6 @@
                 <h2>Excel to Word</h2>
                 <p>นำข้อมูลจากใน excel ไปแทรกใส่ใน word ที่จัดรูปแบบไว้แล้ว</p>
                 <a href="p_excelToWord/show.html">รายละเอียด</a>
-            </div>
-            <div class="performance">
-                <img src="p_car/image.jpg" alt="Picture Performance">
-                <h2>ควบคุมรถโฟล์คลิฟท์อัตโนมัติ</h2>
-                <p>รับคำสั่งจาก csv เพื่อใช้ในการควบคุมรถ สั่งงานรถผ่าน serial port รับค่าพิกัดผ่าน tcpip
-                    ควบคุมการเคลื่อนที่ ยกสิ่งของ มีระบบป้องกันการชนด้วย sensor และใช้กล้องที่ระบุระยะห่างได้</p>
-                <a href="p_car/show.html">รายละเอียด</a>
             </div>
         </div>
     </section>
